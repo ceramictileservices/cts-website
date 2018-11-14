@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('cts-website:server');
+var debug = require('debug')('testing.ceramictileservices.net:server');
 var http = require('http');
 
 /**

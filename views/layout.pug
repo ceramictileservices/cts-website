@@ -1,7 +1,18 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+		include head.pug
+	body
+		//-include analytics.pug
+		.container
+			header
+				include header.pug
+			.sidebar-left
+				include sidebar-left.pug
+			article.content
+				block content
+					div= pagecontent
+			aside.sidebar-right
+				include sidebar-right.pug
+			footer
+				include footer.pug
